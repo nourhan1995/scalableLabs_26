@@ -22,7 +22,10 @@ class UserController {
         return List.of(new User("dlkfjsl", "ijdfadj@djfldj.com", 34));
     }
 
-
+    @GetMapping("/me")
+    public List<User> getMe(){
+        return List.of(new User("000", "nr", "jdfjd@example.com", 8598));
+    }
 
     @GetMapping("/hello")
     public String testController(){
